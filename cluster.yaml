@@ -1,0 +1,13 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: <yourclustername>
+  region: us-west-2
+  version: "1.16"
+
+nodeGroups:
+  - name: asm-ng-hol-1-1
+    instanceType: m4.xlarge
+    desiredCapacity: 2
+    ami: auto

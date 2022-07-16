@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mythical-api-config # example: orders-api-config
+  namespace: mythical-payment # example: default
+type: Opaque
+stringData:
+  config: |
+    {
+      "clientId": "<replace-with-clientId>",
+      "clientSecret": "<replace-with-clientSecret>"
+    }
